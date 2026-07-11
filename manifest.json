@@ -1,0 +1,16 @@
+{
+  "name": "محرر ومعاين الأكواد المتقدم | HTML.com.ly",
+  "short_name": "HTML.com.ly",
+  "description": "منصة بروتالست متطورة لكتابة ومعاينة أكواد الويب المباشرة وتجميلها فورا مع دعم كامل للأوفلاين.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066FF",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066FF' stroke='black' stroke-width='8'/><text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='Cairo' font-weight='900' font-size='42' fill='white'>&lt;/&gt;</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
