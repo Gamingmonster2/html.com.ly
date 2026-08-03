@@ -1,204 +1,36 @@
-
- `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta name="google-site-verification" content="wKfvjWGrQccu1WyTLAbbumuzSCLuDJ-2whPFJ5QCwyU" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML.com.ly | Advanced Online HTML Editor & Live Previewer</title>
   
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066FF' stroke='black' stroke-width='8'/><text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='50' fill='white'>&lt;/&gt;</text></svg>">
+  <link rel="alternate icon" type="image/png" href="./favicon.ico">
 
-<meta charset="UTF-8">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="HTML.com.ly is the fastest live HTML Online Viewer & Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
+  <meta name="keywords" content="HTML Editor Online, Live HTML Viewer, HTML Formatter, Best HTML Sandbox, Tailwind Playground, Code Minifier, HTML.com.ly, Web Development Tools">
+  <meta name="author" content="HTML.com.ly">
+  <link rel="canonical" href="https://ly.id.ly/" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML.com.ly | Advanced Online HTML Editor & Live Previewer</title>
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066FF' stroke='black' stroke-width='8'/><text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='50' fill='white'>&lt;/&gt;</text></svg>">
-    <link rel="alternate icon" type="image/png" href="https://via.placeholder.com/32x32/0066FF/FFFFFF?text=H">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ly.id.ly/">
+  <meta property="og:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
+  <meta property="og:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
+  <meta property="og:image" content="./icon-512.png">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="HTML.com.ly is the fastest live HTML Online Viewer & Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
-    <meta name="keywords" content="HTML Editor Online, Live HTML Viewer, HTML Formatter, Best HTML Sandbox, Tailwind Playground, Code Minifier, HTML.com.ly, Web Development Tools">
-    <meta name="author" content="HTML.com.ly">
-    <link rel="canonical" href="https://ffffii7.blogspot.com/" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ly.id.ly/">
+  <meta name="twitter:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
+  <meta name="twitter:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
+  <meta name="twitter:image" content="./icon-512.png">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ffffii7.blogspot.com/">
-    <meta property="og:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
-    <meta property="og:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
-    <meta property="og:image" content="https://ffffii7.blogspot.com/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ffffii7.blogspot.com/">
-    <meta property="twitter:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
-    <meta property="twitter:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
-    <meta property="twitter:image" content="https://ffffii7.blogspot.com/og-image.png">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "HTML.com.ly Editor",
-      "operatingSystem": "Any",
-      "applicationCategory": "DeveloperApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "A high-performance online HTML editor and live viewer featuring Tailwind CSS support and code beautification tools."
-    }
-    </script>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-    <!-- CodeMirror (Editor Engine) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/neo.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"></script>
-
-    <!-- Utilities: Beautify & Screenshot -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify-html.min.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-
-    <style>
-        :root {
-            --accent: #0066FF;
-            --bg-light: #ffffff;
-            --bg-dark: #121212;
-            --border-color: #000000;
-        }
-
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            overflow: hidden;
-            background-color: var(--bg-light);
-        }
-
-        /* Brutalist Design System */
-        .brutal-border {
-            border: 2px solid var(--border-color);
-        }
-        
-        .brutal-shadow {
-            box-shadow: 4px 4px 0px 0px var(--border-color);
-            transition: all 0.15s ease;
-        }
-
-        .brutal-shadow:hover {
-            transform: translate(-1px, -1px);
-            box-shadow: 6px 6px 0px 0px var(--border-color);
-        }
-
-        .brutal-shadow:active {
-            transform: translate(2px, 2px);
-            box-shadow: 0px 0px 0px 0px var(--border-color);
-        }
-
-        /* Editor Overrides */
-        .CodeMirror {
-            height: 100%;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 14px;
-            line-height: 1.6;
-            background: transparent !important;
-        }
-
-        /* Dark Mode Overrides */
-        body.dark-mode {
-            background-color: var(--bg-dark);
-            color: white;
-            --border-color: #ffffff;
-        }
-        
-        body.dark-mode .brutal-border { border-color: #ffffff; }
-        body.dark-mode .brutal-shadow { box-shadow: 4px 4px 0px 0px #ffffff; }
-        body.dark-mode .bg-white { background-color: #1e1e1e; color: white; }
-        body.dark-mode .text-black { color: white; }
-        body.dark-mode .bg-gray-50, body.dark-mode .bg-gray-100 { background-color: #181818; }
-
-        /* Professional Toast System */
-        #notification-container {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            pointer-events: none;
-        }
-        .brutal-notification {
-            pointer-events: auto;
-            min-width: 300px;
-            padding: 16px 20px;
-            border: 3px solid #000;
-            background: white;
-            font-weight: 800;
-            box-shadow: 6px 6px 0px 0px #000;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            animation: brutalSlide 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transition: transform 0.2s ease, opacity 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-        }
-        .brutal-notification.fade-out {
-            transform: translateX(120%);
-            opacity: 0;
-        }
-        @keyframes brutalSlide {
-            from { transform: translateX(100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        .notif-success { background: #4ade80; }
-        .notif-error { background: #f87171; color: white; }
-        .notif-warning { background: #fbbf24; }
-        .notif-info { background: #60a5fa; color: white; }
-
-        /* Modal Custom Scroll */
-        .modal-content-scroll::-webkit-scrollbar { width: 6px; }
-        .modal-content-scroll::-webkit-scrollbar-thumb { background: var(--accent); }
-
-        /* SEO Visibility Helper */
-        .sr-only-content {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        @media (max-width: 768px) {
-            body { overflow: auto; height: auto; }
-            .h-screen { height: auto; min-height: 100vh; }
-            main { height: auto; flex-direction: column; }
-            section { height: 500px; }
-            #notification-container { right: 50%; transform: translateX(50%); bottom: 20px; width: 90%; }
-            .brutal-notification { min-width: unset; }
-        }
-    </style>
-  <!-- PWA Meta Tags & Manifest Link (Generated by PWA Generator) -->
+  <!-- PWA Meta Tags & Manifest Link -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <meta name="theme-color" content="#0066FF">
@@ -206,41 +38,165 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="HTML.com.ly">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  
-  <!-- Automated SEO & Search Engine Metadata -->
   <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph (OG) / Social Media Tags -->
-  <meta property="og:title" content="HTML.com.ly">
-  <meta property="og:description" content="HTML.com.ly is the fastest live HTML Online Viewer &amp; Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="HTML.com.ly">
-  <meta property="og:url" content="./">
-  <meta property="og:image" content="./icon-512.png">
-  
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HTML.com.ly">
-  <meta name="twitter:description" content="HTML.com.ly is the fastest live HTML Online Viewer &amp; Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
-  <meta name="twitter:image" content="./icon-512.png">
-  
-  <!-- Structured Data (JSON-LD) for Search Engines -->
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "HTML.com.ly",
-  "description": "HTML.com.ly is the fastest live HTML Online Viewer & Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "All",
-  "browserRequirements": "Requires JavaScript. Requires HTML5.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HTML.com.ly Editor",
+    "operatingSystem": "Any",
+    "applicationCategory": "DeveloperApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "A high-performance online HTML editor and live viewer featuring Tailwind CSS support and code beautification tools."
   }
-}
   </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- CodeMirror (Editor Engine) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/neo.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"></script>
+
+  <!-- Utilities: Beautify & Screenshot -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify-html.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  <style>
+      :root {
+          --accent: #0066FF;
+          --bg-light: #ffffff;
+          --bg-dark: #121212;
+          --border-color: #000000;
+      }
+
+      body {
+          font-family: 'Space Grotesk', sans-serif;
+          overflow: hidden;
+          background-color: var(--bg-light);
+      }
+
+      .brutal-border {
+          border: 2px solid var(--border-color);
+      }
+      
+      .brutal-shadow {
+          box-shadow: 4px 4px 0px 0px var(--border-color);
+          transition: all 0.15s ease;
+      }
+
+      .brutal-shadow:hover {
+          transform: translate(-1px, -1px);
+          box-shadow: 6px 6px 0px 0px var(--border-color);
+      }
+
+      .brutal-shadow:active {
+          transform: translate(2px, 2px);
+          box-shadow: 0px 0px 0px 0px var(--border-color);
+      }
+
+      .CodeMirror {
+          height: 100%;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 14px;
+          line-height: 1.6;
+          background: transparent !important;
+      }
+
+      body.dark-mode {
+          background-color: var(--bg-dark);
+          color: white;
+          --border-color: #ffffff;
+      }
+      
+      body.dark-mode .brutal-border { border-color: #ffffff; }
+      body.dark-mode .brutal-shadow { box-shadow: 4px 4px 0px 0px #ffffff; }
+      body.dark-mode .bg-white { background-color: #1e1e1e; color: white; }
+      body.dark-mode .text-black { color: white; }
+      body.dark-mode .bg-gray-50, body.dark-mode .bg-gray-100 { background-color: #181818; }
+
+      #notification-container {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          pointer-events: none;
+      }
+      .brutal-notification {
+          pointer-events: auto;
+          min-width: 300px;
+          padding: 16px 20px;
+          border: 3px solid #000;
+          background: white;
+          font-weight: 800;
+          box-shadow: 6px 6px 0px 0px #000;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          animation: brutalSlide 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: transform 0.2s ease, opacity 0.2s ease;
+          text-transform: uppercase;
+          letter-spacing: -0.5px;
+      }
+      .brutal-notification.fade-out {
+          transform: translateX(120%);
+          opacity: 0;
+      }
+      @keyframes brutalSlide {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+      }
+      .notif-success { background: #4ade80; }
+      .notif-error { background: #f87171; color: white; }
+      .notif-warning { background: #fbbf24; }
+      .notif-info { background: #60a5fa; color: white; }
+
+      .modal-content-scroll::-webkit-scrollbar { width: 6px; }
+      .modal-content-scroll::-webkit-scrollbar-thumb { background: var(--accent); }
+
+      .sr-only-content {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border-width: 0;
+      }
+
+      @media (max-width: 768px) {
+          body { overflow: auto; height: auto; }
+          .h-screen { height: auto; min-height: 100vh; }
+          main { height: auto; flex-direction: column; }
+          section { height: 500px; }
+          #notification-container { right: 50%; transform: translateX(50%); bottom: 20px; width: 90%; }
+          .brutal-notification { min-width: unset; }
+      }
+  </style>
 </head>
 <body class="h-screen flex flex-col transition-colors duration-300">
 
@@ -379,7 +335,6 @@
         let editor;
         let updateTimeout;
 
-        // --- Notification System ---
         function showNotification(message, type = 'success') {
             const container = document.getElementById('notification-container');
             const notif = document.createElement('div');
@@ -404,7 +359,6 @@
             }, duration);
         }
 
-        // --- Initialization ---
         document.addEventListener('DOMContentLoaded', () => {
             editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
                 mode: 'htmlmixed',
@@ -567,22 +521,23 @@
         function closeModal() { document.getElementById('modal-overlay').classList.add('hidden'); }
 
         function loadInitialSample() {
-            editor.setValue(`<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 90vh; background: #fdfdfd; }\n    .card { border: 4px solid #000; box-shadow: 10px 10px 0 #0066FF; padding: 40px; background: #fff; }\n    h1 { color: #0066FF; font-size: 3rem; margin: 0; }\n  </style>\n</head>\n<body>\n  <div class="card">\n    <h1>HTML.com.ly</h1>\n    <p>Professional Previewer Loaded.</p>\n  </div>\n  <!-- PWA Service Worker Registration (Generated by PWA Generator) -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then((registration) => {
-            console.log('[PWA] Service Worker registered with scope:', registration.scope);
-          })
-          .catch((error) => {
-            console.error('[PWA] Service Worker registration failed:', error);
-          });
-      });
-    }
-  </script>
-</body>\n</html>`);
+            editor.setValue(`<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 90vh; background: #fdfdfd; }\n    .card { border: 4px solid #000; box-shadow: 10px 10px 0 #0066FF; padding: 40px; background: #fff; }\n    h1 { color: #0066FF; font-size: 3rem; margin: 0; }\n  </style>\n</head>\n<body>\n  <div class="card">\n    <h1>HTML.com.ly</h1>\n    <p>Professional Previewer Loaded.</p>\n  </div>\n</body>\n</html>`);
         }
+    </script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((registration) => {
+              console.log('[PWA] Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('[PWA] Service Worker registration failed:', error);
+            });
+        });
+      }
     </script>
 </body>
 </html>
