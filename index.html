@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+ `<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+  
+  <meta name="google-site-verification" content="wKfvjWGrQccu1WyTLAbbumuzSCLuDJ-2whPFJ5QCwyU" />
+  
+
+<meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML.com.ly | محرّر ومعاين أكواد HTML المباشر والمتقدم</title>
+    <title>HTML.com.ly | Advanced Online HTML Editor & Live Previewer</title>
     
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230066FF' stroke='black' stroke-width='8'/><text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='50' fill='white'>&lt;/&gt;</text></svg>">
     <link rel="alternate icon" type="image/png" href="https://via.placeholder.com/32x32/0066FF/FFFFFF?text=H">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="HTML.com.ly هو أسرع محرر ومعاين مباشر لأكواد HTML على الإنترنت للمطورين والمصممين. يضم أدوات ضغط الكود، وتنسيقه، ودعم Tailwind CSS، وتصدير الأكواد كصور.">
-    <meta name="keywords" content="محرر HTML, معاينة HTML مباشرة, تنسيق الكود, بيئة تجريبية HTML, Tailwind Playground, ضغط HTML, أدوات المطورين">
+    <meta name="description" content="HTML.com.ly is the fastest live HTML Online Viewer & Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
+    <meta name="keywords" content="HTML Editor Online, Live HTML Viewer, HTML Formatter, Best HTML Sandbox, Tailwind Playground, Code Minifier, HTML.com.ly, Web Development Tools">
     <meta name="author" content="HTML.com.ly">
     <link rel="canonical" href="https://ffffii7.blogspot.com/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ffffii7.blogspot.com/">
-    <meta property="og:title" content="HTML.com.ly | محرّر ومعاين أكواد HTML المباشر والمتقدم">
-    <meta property="og:description" content="أسرع محرر ومعاين مباشر لأكواد HTML مع دعم كامل لـ Tailwind CSS وأدوات تنسيق وتصدير متقدمة.">
+    <meta property="og:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
+    <meta property="og:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
     <meta property="og:image" content="https://ffffii7.blogspot.com/og-image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ffffii7.blogspot.com/">
-    <meta property="twitter:title" content="HTML.com.ly | محرّر ومعاين أكواد HTML المباشر والمتقدم">
-    <meta property="twitter:description" content="أسرع محرر ومعاين مباشر لأكواد HTML مع دعم كامل لـ Tailwind CSS وأدوات تنسيق وتصدير متقدمة.">
+    <meta property="twitter:title" content="HTML.com.ly | Advanced Online HTML Editor & Live Previewer">
+    <meta property="twitter:description" content="The fastest live HTML Online Viewer & Editor. Features include HTML Minifier, Code Beautifier, Tailwind CSS support, and Code-to-Image export.">
     <meta property="twitter:image" content="https://ffffii7.blogspot.com/og-image.png">
 
     <!-- Schema.org JSON-LD -->
@@ -42,27 +48,15 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "description": "بيئة تطوير متقدمة ومباشرة لتحرير ومعاينة أكواد HTML ودعم Tailwind CSS محلياً في المتصفح."
+      "description": "A high-performance online HTML editor and live viewer featuring Tailwind CSS support and code beautification tools."
     }
     </script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Tajawal', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -91,7 +85,7 @@
         }
 
         body {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
             overflow: hidden;
             background-color: var(--bg-light);
         }
@@ -102,29 +96,27 @@
         }
         
         .brutal-shadow {
-            box-shadow: -4px 4px 0px 0px var(--border-color);
+            box-shadow: 4px 4px 0px 0px var(--border-color);
             transition: all 0.15s ease;
         }
 
         .brutal-shadow:hover {
-            transform: translate(1px, -1px);
-            box-shadow: -6px 6px 0px 0px var(--border-color);
+            transform: translate(-1px, -1px);
+            box-shadow: 6px 6px 0px 0px var(--border-color);
         }
 
         .brutal-shadow:active {
-            transform: translate(-2px, 2px);
+            transform: translate(2px, 2px);
             box-shadow: 0px 0px 0px 0px var(--border-color);
         }
 
-        /* Editor Overrides (Always LTR for code) */
+        /* Editor Overrides */
         .CodeMirror {
             height: 100%;
             font-family: 'JetBrains Mono', monospace;
             font-size: 14px;
             line-height: 1.6;
             background: transparent !important;
-            direction: ltr !important;
-            text-align: left !important;
         }
 
         /* Dark Mode Overrides */
@@ -135,18 +127,16 @@
         }
         
         body.dark-mode .brutal-border { border-color: #ffffff; }
-        body.dark-mode .brutal-shadow { box-shadow: -4px 4px 0px 0px #ffffff; }
+        body.dark-mode .brutal-shadow { box-shadow: 4px 4px 0px 0px #ffffff; }
         body.dark-mode .bg-white { background-color: #1e1e1e; color: white; }
         body.dark-mode .text-black { color: white; }
         body.dark-mode .bg-gray-50, body.dark-mode .bg-gray-100 { background-color: #181818; }
-        body.dark-mode .text-gray-500 { color: #a3a3a3; }
-        body.dark-mode .text-gray-400 { color: #d4d4d4; }
 
         /* Professional Toast System */
         #notification-container {
             position: fixed;
             bottom: 24px;
-            left: 24px;
+            right: 24px;
             z-index: 9999;
             display: flex;
             flex-direction: column;
@@ -157,27 +147,29 @@
             pointer-events: auto;
             min-width: 300px;
             padding: 16px 20px;
-            border: 3px solid var(--border-color);
+            border: 3px solid #000;
             background: white;
             font-weight: 800;
-            box-shadow: -6px 6px 0px 0px var(--border-color);
+            box-shadow: 6px 6px 0px 0px #000;
             display: flex;
             align-items: center;
             gap: 12px;
             animation: brutalSlide 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: transform 0.2s ease, opacity 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
         }
         .brutal-notification.fade-out {
-            transform: translateX(-120%);
+            transform: translateX(120%);
             opacity: 0;
         }
         @keyframes brutalSlide {
-            from { transform: translateX(-100%); opacity: 0; }
+            from { transform: translateX(100%); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
-        .notif-success { background: #4ade80; color: #000; }
+        .notif-success { background: #4ade80; }
         .notif-error { background: #f87171; color: white; }
-        .notif-warning { background: #fbbf24; color: #000; }
+        .notif-warning { background: #fbbf24; }
         .notif-info { background: #60a5fa; color: white; }
 
         /* Modal Custom Scroll */
@@ -202,7 +194,7 @@
             .h-screen { height: auto; min-height: 100vh; }
             main { height: auto; flex-direction: column; }
             section { height: 500px; }
-            #notification-container { left: 50%; transform: translateX(-50%); bottom: 20px; width: 90%; }
+            #notification-container { right: 50%; transform: translateX(50%); bottom: 20px; width: 90%; }
             .brutal-notification { min-width: unset; }
         }
     </style>
@@ -220,7 +212,7 @@
   
   <!-- Open Graph (OG) / Social Media Tags -->
   <meta property="og:title" content="HTML.com.ly">
-  <meta property="og:description" content="HTML.com.ly هو أسرع محرر ومعاين مباشر لأكواد HTML على الإنترنت للمطورين والمصممين. يضم أدوات ضغط الكود، وتنسيقه، ودعم Tailwind CSS، وتصدير الأكواد كصور.">
+  <meta property="og:description" content="HTML.com.ly is the fastest live HTML Online Viewer &amp; Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="HTML.com.ly">
   <meta property="og:url" content="./">
@@ -229,7 +221,7 @@
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HTML.com.ly">
-  <meta name="twitter:description" content="HTML.com.ly هو أسرع محرر ومعاين مباشر لأكواد HTML على الإنترنت للمطورين والمصممين. يضم أدوات ضغط الكود، وتنسيقه، ودعم Tailwind CSS، وتصدير الأكواد كصور.">
+  <meta name="twitter:description" content="HTML.com.ly is the fastest live HTML Online Viewer &amp; Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.">
   <meta name="twitter:image" content="./icon-512.png">
   
   <!-- Structured Data (JSON-LD) for Search Engines -->
@@ -238,7 +230,7 @@
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "HTML.com.ly",
-  "description": "HTML.com.ly هو أسرع محرر ومعاين مباشر لأكواد HTML على الإنترنت للمطورين والمصممين. يضم أدوات ضغط الكود، وتنسيقه، ودعم Tailwind CSS، وتصدير الأكواد كصور.",
+  "description": "HTML.com.ly is the fastest live HTML Online Viewer & Editor for developers and designers. Features include a powerful HTML Minifier, Code Beautifier, Tailwind CSS support, and instant Code-to-Image export for documentation. Perfect for testing snippets securely in your browser with real-time results.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "browserRequirements": "Requires JavaScript. Requires HTML5.",
@@ -261,25 +253,25 @@
             <div class="w-10 h-10 bg-[#0066FF] brutal-border flex items-center justify-center text-white font-black text-xl brutal-shadow">
                 &lt;/&gt;
             </div>
-            <h1 class="text-2xl font-black tracking-tighter">HTML<span class="text-[#0066FF]">.com.ly</span></h1>
+            <h1 class="text-2xl font-bold tracking-tighter">HTML<span class="text-[#0066FF]">.com.ly</span></h1>
         </div>
 
         <div class="flex items-center gap-3">
-            <div class="hidden md:flex items-center gap-2 ml-4">
-                <span class="text-xs font-bold uppercase">الحالة:</span>
+            <div class="hidden md:flex items-center gap-2 mr-4">
+                <span class="text-xs font-bold uppercase">Status:</span>
                 <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse" id="save-indicator"></div>
             </div>
 
-            <button onclick="toggleTailwind()" id="tailwind-btn" class="brutal-border px-3 py-1 text-xs font-bold hover:bg-teal-50 transition-colors flex items-center gap-1" title="تضمين مكتبة Tailwind CSS">
-                <i class="ph ph-wind text-lg"></i> <span class="hidden sm:inline">مكتبة Tailwind: معطلة</span>
+            <button onclick="toggleTailwind()" id="tailwind-btn" class="brutal-border px-3 py-1 text-xs font-bold hover:bg-teal-50 transition-colors flex items-center gap-1" title="Inject Tailwind CSS">
+                <i class="ph ph-wind text-lg"></i> <span class="hidden sm:inline">Tailwind: OFF</span>
             </button>
 
-            <button onclick="toggleTheme()" class="brutal-border p-2 hover:bg-gray-100 transition-colors" title="تبديل المظهر">
+            <button onclick="toggleTheme()" class="brutal-border p-2 hover:bg-gray-100 transition-colors" title="Toggle Dark Mode">
                 <i class="ph ph-moon text-xl" id="theme-icon"></i>
             </button>
             
             <button onclick="showModal('about')" class="bg-[#0066FF] text-white brutal-border px-4 py-2 font-bold brutal-shadow hover:bg-blue-600 flex items-center gap-2">
-                <i class="ph ph-info"></i> <span class="hidden sm:inline">دليل الاستخدام</span>
+                <i class="ph ph-info"></i> <span class="hidden sm:inline">How it Works</span>
             </button>
         </div>
     </header>
@@ -288,100 +280,100 @@
     <main class="flex-grow flex flex-col md:flex-row overflow-hidden bg-white">
         
         <!-- Sidebar Tools -->
-        <aside class="w-full md:w-16 bg-gray-50 brutal-border md:border-t-0 md:border-r-0 md:border-l-2 border-b-2 flex md:flex-col items-center py-2 md:py-4 gap-4 overflow-x-auto md:overflow-visible z-10">
-            <button onclick="formatCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="تنسيق كود HTML">
+        <aside class="w-full md:w-16 bg-gray-50 brutal-border md:border-t-0 md:border-l-0 border-b-2 flex md:flex-col items-center py-2 md:py-4 gap-4 overflow-x-auto md:overflow-visible z-10">
+            <button onclick="formatCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="Beautify HTML">
                 <i class="ph ph-magic-wand text-2xl"></i>
-                <span class="absolute right-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">تنسيق الكود</span>
+                <span class="absolute left-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">Beautify Code</span>
             </button>
 
-            <button onclick="minifyCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="ضغط كود HTML">
+            <button onclick="minifyCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="Minify HTML">
                 <i class="ph ph-arrows-in-line-horizontal text-2xl"></i>
-                <span class="absolute right-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">ضغط الكود</span>
+                <span class="absolute left-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">Minify Code</span>
             </button>
 
-            <button onclick="copyCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="نسخ الكود">
+            <button onclick="copyCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="Copy to Clipboard">
                 <i class="ph ph-copy text-2xl"></i>
-                <span class="absolute right-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">نسخ الكود</span>
+                <span class="absolute left-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">Copy Code</span>
             </button>
 
-            <button onclick="downloadCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="تحميل ملف HTML">
+            <button onclick="downloadCode()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="Download HTML File">
                 <i class="ph ph-download-simple text-2xl"></i>
-                <span class="absolute right-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">تحميل ملف .html</span>
+                <span class="absolute left-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">Download .html</span>
             </button>
 
-            <button id="export-btn" onclick="exportImage()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="تصدير كصورة">
+            <button id="export-btn" onclick="exportImage()" class="p-2 hover:bg-[#0066FF] hover:text-white rounded transition-colors group relative" title="Export to Image">
                 <i class="ph ph-camera text-2xl"></i>
-                <span class="absolute right-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">تصدير المعاينة كصورة</span>
+                <span class="absolute left-14 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-50 hidden md:block shadow-lg">Code to Image</span>
             </button>
 
             <div class="flex-grow hidden md:block"></div>
 
-            <button onclick="clearEditor()" class="p-2 hover:bg-red-600 hover:text-white rounded transition-colors group relative" title="مسح مساحة العمل">
+            <button onclick="clearEditor()" class="p-2 hover:bg-red-600 hover:text-white rounded transition-colors group relative" title="Clear Canvas">
                 <i class="ph ph-trash text-2xl"></i>
             </button>
         </aside>
 
         <!-- Editor Section -->
         <section class="flex-1 flex flex-col h-1/2 md:h-full relative brutal-border border-t-0 border-b-0">
-            <div class="bg-gray-100 border-b-2 border-black px-4 py-1 flex justify-between items-center text-[11px] font-bold tracking-wider">
-                <span><i class="ph ph-code-block ml-1"></i> مساحة الإدخال البرمجية</span>
-                <span class="text-gray-500">حفظ تلقائي محلي</span>
+            <div class="bg-gray-100 border-b-2 border-black px-4 py-1 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest">
+                <span><i class="ph ph-code-block mr-1"></i> Input Workspace</span>
+                <span class="text-gray-500">Auto-Saving to LocalStorage</span>
             </div>
-            <div id="editor-wrapper" class="flex-grow relative h-full overflow-hidden">
+            <div id="editor-wrapper" class="flex-grow relative h-full">
                 <textarea id="code-editor"></textarea>
             </div>
         </section>
 
         <!-- Preview Section -->
         <section class="flex-1 flex flex-col h-1/2 md:h-full bg-white relative">
-            <div class="bg-gray-100 border-b-2 border-black px-4 py-1 flex justify-between items-center text-[11px] font-bold tracking-wider">
-                <span><i class="ph ph-eye ml-1"></i> المعاينة المباشرة</span>
+            <div class="bg-gray-100 border-b-2 border-black px-4 py-1 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest">
+                <span><i class="ph ph-eye mr-1"></i> Live Render</span>
                 <div class="flex gap-4 items-center">
                     <div class="hidden sm:flex bg-gray-200 p-1 rounded gap-1">
-                        <button onclick="setPreviewSize('100%')" class="p-1 hover:bg-white rounded shadow-sm" title="شاشة كاملة"><i class="ph ph-desktop"></i></button>
-                        <button onclick="setPreviewSize('768px')" class="p-1 hover:bg-white rounded shadow-sm" title="جهاز لوحي"><i class="ph ph-tablet"></i></button>
-                        <button onclick="setPreviewSize('375px')" class="p-1 hover:bg-white rounded shadow-sm" title="هاتف محمول"><i class="ph ph-device-mobile"></i></button>
+                        <button onclick="setPreviewSize('100%')" class="p-1 hover:bg-white rounded shadow-sm"><i class="ph ph-desktop"></i></button>
+                        <button onclick="setPreviewSize('768px')" class="p-1 hover:bg-white rounded shadow-sm"><i class="ph ph-tablet"></i></button>
+                        <button onclick="setPreviewSize('375px')" class="p-1 hover:bg-white rounded shadow-sm"><i class="ph ph-device-mobile"></i></button>
                     </div>
-                    <div class="flex gap-2 border-r border-gray-400 pr-2">
-                        <button onclick="openNewWindow()" title="فتح في علامة تبويب جديدة"><i class="ph ph-arrow-square-out text-lg"></i></button>
-                        <button onclick="toggleFullScreen()" title="وضع ملء الشاشة"><i class="ph ph-corners-out text-lg"></i></button>
+                    <div class="flex gap-2 border-l border-gray-400 pl-2">
+                        <button onclick="openNewWindow()" title="Open Independent Tab"><i class="ph ph-arrow-square-out text-lg"></i></button>
+                        <button onclick="toggleFullScreen()" title="Zen Mode"><i class="ph ph-corners-out text-lg"></i></button>
                     </div>
                 </div>
             </div>
             <div class="flex-grow relative bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] flex justify-center items-start overflow-auto">
-                <iframe id="preview-frame" class="w-full h-full border-none bg-white brutal-shadow m-4 md:m-0" sandbox="allow-scripts allow-modals allow-forms allow-same-origin" title="مخرج المعاينة المباشرة"></iframe>
+                <iframe id="preview-frame" class="w-full h-full border-none bg-white brutal-shadow m-4 md:m-0" sandbox="allow-scripts allow-modals allow-forms allow-same-origin" title="Live Preview Output"></iframe>
             </div>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 border-t-2 border-black py-1.5 px-4 text-[11px] text-gray-500 font-mono flex justify-between items-center z-20">
-        <span>&copy; 2026 HTML.com.ly | منصة تطوير عالية الأداء</span>
+    <footer class="bg-gray-100 border-t-2 border-black py-1 px-4 text-[10px] text-gray-500 font-mono flex justify-between items-center z-20">
+        <span>&copy; 2026 HTML.com.ly | Performance Built Architecture</span>
         <div class="flex gap-4">
-            <button onclick="showModal('terms')" class="hover:underline">الشروط والأحكام</button>
-            <button onclick="showModal('privacy')" class="hover:underline">سياسة الخصوصية</button>
+            <button onclick="showModal('terms')" class="hover:underline">Terms</button>
+            <button onclick="showModal('privacy')" class="hover:underline">Privacy</button>
         </div>
     </footer>
 
     <!-- SEO Content Section -->
     <section class="sr-only-content">
-        <h2>دليل محرر HTML المتقدم والمعاين المباشر</h2>
-        <p>مرحباً بك في منصة HTML.com.ly، الخيار الأمثل للمطورين والمصممين لتجربة وكتابة أكواد HTML البرمجية ومعاينتها بشكل فوري ومباشر مع دعم كامل لتقنيات الويب الحديثة وحفظ البيانات محلياً لضمان أقصى درجات الأمان والخصوصية.</p>
+        <h2>Documentation and Advanced HTML Online Viewer Guide</h2>
+        <p>Welcome to HTML.com.ly, the professional choice for a fast HTML editor and high-performance coding sandbox. Our tool provides a private HTML editor environment where your code is processed locally in your browser, ensuring a safe and secure session.</p>
     </section>
 
     <!-- Modals -->
     <div id="modal-overlay" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
         <div class="bg-white w-full max-w-2xl brutal-border brutal-shadow p-8 relative max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
-            <button onclick="closeModal()" class="absolute top-4 left-4 text-2xl hover:text-red-600 font-bold transition-transform hover:rotate-90">&times;</button>
-            <h2 id="modal-title" class="text-3xl font-black mb-6 border-b-4 border-[#0066FF] inline-block pb-1">التوثيق والدليل</h2>
-            <div id="modal-content" class="modal-content-scroll overflow-y-auto pl-4 text-sm leading-relaxed text-right"></div>
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl hover:text-red-600 font-bold transition-transform hover:rotate-90">&times;</button>
+            <h2 id="modal-title" class="text-3xl font-black mb-6 uppercase border-b-4 border-[#0066FF] inline-block pb-1">Documentation</h2>
+            <div id="modal-content" class="modal-content-scroll overflow-y-auto pr-4 text-sm leading-relaxed"></div>
         </div>
     </div>
 
     <!-- Logic -->
     <script>
-        const STORAGE_KEY = 'html_com_ly_ar_v2';
+        const STORAGE_KEY = 'html_com_ly_v2';
         let isTailwindActive = false;
         let isDarkMode = false;
         let editor;
@@ -438,7 +430,7 @@
             });
 
             updatePreview();
-            showNotification("مرحباً بك مجدداً! جاهز للكتابة والتطوير؟", "info");
+            showNotification("Welcome back! Ready to code?", "info");
         });
 
         function updatePreview() {
@@ -465,17 +457,17 @@
             const raw = editor.getValue();
             const formatted = html_beautify(raw, { indent_size: 2, wrap_line_length: 80 });
             editor.setValue(formatted);
-            showNotification("تم تنسيق الكود بنجاح", "success");
+            showNotification("HTML Code Beautified", "success");
         }
 
         function minifyCode() {
             let code = editor.getValue().replace(/>\s+</g, '><').replace(/\s{2,}/g, ' ').replace(/(\r\n|\n|\r)/gm, "");
             editor.setValue(code);
-            showNotification("تم ضغط الكود بنجاح لتقليل الحجم", "success");
+            showNotification("HTML Code Minified", "success");
         }
 
         function copyCode() {
-            navigator.clipboard.writeText(editor.getValue()).then(() => showNotification("تم نسخ الكود إلى الحافظة!", "success"));
+            navigator.clipboard.writeText(editor.getValue()).then(() => showNotification("Copied to Clipboard!", "success"));
         }
 
         function downloadCode() {
@@ -483,7 +475,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url; a.download = 'index-html-com-ly.html'; a.click();
-            showNotification("جاري تحضير ملف التحميل...", "info");
+            showNotification("Preparing Download...", "info");
         }
 
         async function exportImage() {
@@ -495,7 +487,7 @@
             btn.disabled = true;
 
             try {
-                showNotification("جاري إنشاء لقطة شاشة للمعاينة...", "info");
+                showNotification("Generating Snapshot...", "info");
                 const canvas = await html2canvas(target, {
                     useCORS: true, scale: 2, logging: false,
                     backgroundColor: isDarkMode ? '#1e1e1e' : '#ffffff'
@@ -504,9 +496,9 @@
                 link.download = `html-preview-${Date.now()}.png`;
                 link.href = canvas.toDataURL("image/png");
                 link.click();
-                showNotification("تم تصدير المعاينة كصورة بنجاح!", "success");
+                showNotification("Export Successful!", "success");
             } catch (err) {
-                showNotification("فشل التصدير: الكود يحتوي على عناصر معقدة للغاية.", "error");
+                showNotification("Failed: Code is too complex for snapshot.", "error");
             } finally {
                 btn.innerHTML = originalContent;
                 btn.disabled = false;
@@ -516,10 +508,10 @@
         function toggleTailwind() {
             isTailwindActive = !isTailwindActive;
             const btn = document.getElementById('tailwind-btn');
-            btn.querySelector('span').innerText = isTailwindActive ? "مكتبة Tailwind: نشطة" : "مكتبة Tailwind: معطلة";
+            btn.querySelector('span').innerText = isTailwindActive ? "Tailwind: ON" : "Tailwind: OFF";
             btn.classList.toggle('bg-teal-400');
             updatePreview();
-            showNotification(isTailwindActive ? "تم حقن مكتبة Tailwind CSS بنجاح" : "تم إزالة مكتبة Tailwind CSS", "warning");
+            showNotification(isTailwindActive ? "Tailwind CSS Injected" : "Tailwind CSS Removed", "warning");
         }
 
         function toggleTheme() {
@@ -528,13 +520,13 @@
             const icon = document.getElementById('theme-icon');
             icon.className = isDarkMode ? "ph ph-sun text-xl" : "ph ph-moon text-xl";
             editor.setOption('theme', isDarkMode ? 'dracula' : 'neo');
-            showNotification(`تم التبديل إلى الوضع ${isDarkMode ? 'الداكن' : 'المضيء'}`, "info");
+            showNotification(`Switching to ${isDarkMode ? 'Dark' : 'Light'} Mode`, "info");
         }
 
         function clearEditor() {
-            if(confirm("هل أنت متأكد من رغبتك في مسح كل المحتوى؟ لا يمكن التراجع عن هذا الإجراء.")) {
+            if(confirm("This will permanently discard all code. Continue?")) {
                 editor.setValue("");
-                showNotification("تم تصفير مساحة العمل بنجاح", "success");
+                showNotification("Workspace Cleared Successfully", "success");
             }
         }
 
@@ -542,7 +534,7 @@
             const win = window.open("", "_blank");
             win.document.write(editor.getValue());
             win.document.close();
-            showNotification("تم فتح المعاينة في علامة تبويب مستقلة", "info");
+            showNotification("Launched in new tab", "info");
         }
 
         function toggleFullScreen() {
@@ -552,7 +544,7 @@
 
         function setPreviewSize(width) {
             document.getElementById('preview-frame').style.width = width;
-            showNotification(`تم تغيير أبعاد المعاينة إلى ${width}`, "info");
+            showNotification(`Preview adjusted to ${width}`, "info");
         }
 
         function showModal(type) {
@@ -561,100 +553,21 @@
             const content = document.getElementById('modal-content');
             overlay.classList.remove('hidden');
             if (type === 'about') {
-                title.innerText = "كيف تعمل منصة HTML.com.ly؟";
-                content.innerHTML = `
-                    <div class="space-y-4">
-                        <p class="font-bold text-lg text-[#0066FF]">بيئة تطوير متكاملة لمعاينة الأكواد محلياً وبشكل فوري.</p>
-                        <p>تعتمد المنصة على معالجة الأكواد مباشرة داخل متصفحك دون الحاجة لإرسال أي بيانات إلى خوادم خارجية، مما يضمن سرعة متناهية وخصوصية مطلقة لملفاتك البرمجية.</p>
-                        <h4 class="font-bold text-black border-r-4 border-black pr-2 mt-4">أهم الميزات المتوفرة:</h4>
-                        <ul class="list-disc pr-5 space-y-2">
-                            <li><strong>تنسيق الكود (Beautify):</strong> يعيد ترتيب الكود لتسهيل قراءته وصيانته.</li>
-                            <li><strong>ضغط الكود (Minify):</strong> يزيل الفراغات والسطور الزائدة لإنتاج ملف بأصغر حجم ممكن.</li>
-                            <li><strong>تضمين Tailwind CSS:</strong> تفعيل فوري لإطار العمل لتصميم سريع ومباشر.</li>
-                            <li><strong>تصدير كصورة:</strong> تحويل مخرجات التصميم إلى صورة عالية الجودة لمشاركتها بسهولة.</li>
-                        </ul>
-                    </div>
-                `;
+                title.innerText = "About HTML.com.ly";
+                content.innerHTML = "<p>A high-performance HTML sandbox with local processing and brutalist aesthetics.</p>";
             } else if (type === 'privacy') {
-                title.innerText = "سياسة الخصوصية والأمان";
-                content.innerHTML = `
-                    <div class="space-y-4">
-                        <p>نحن في <strong>HTML.com.ly</strong> نضع الأمان في مقدمة أولوياتنا:</p>
-                        <ul class="list-disc pr-5 space-y-2">
-                            <li>لا يتم حفظ أي من أكوادك أو بياناتك البرمجية في خوادمنا على الإطلاق.</li>
-                            <li>تتم جميع عمليات المعالجة والحفظ التلقائي محلياً في متصفحك الخاص عبر تقنية LocalStorage.</li>
-                            <li>المنصة آمنة تماماً ومحمية لتجربة الأكواد البرمجية والبرمجيات النصية بكل ثقة.</li>
-                        </ul>
-                    </div>
-                `;
+                title.innerText = "Privacy Policy";
+                content.innerHTML = "<p>We do not store your code. Everything happens in your browser.</p>";
             } else if (type === 'terms') {
-                title.innerText = "شروط الاستخدام";
-                content.innerHTML = `
-                    <div class="space-y-4">
-                        <p>باستخدامك لمنصة HTML.com.ly، فإنك توافق على الشروط التالية:</p>
-                        <ul class="list-disc pr-5 space-y-2">
-                            <li>المنصة تقدم كأداة مجانية لمجتمع المطورين والمصممين دون أي ضمانات صريحة أو ضمنية.</li>
-                            <li>يُحظر استخدام المنصة لإنتاج أو اختبار برمجيات خبيثة أو ضارة قد تؤثر على متصفحات المستخدمين الآخرين.</li>
-                            <li>نحن لا نتحمل مسؤولية أي فقدان للبيانات نتيجة مسح ذاكرة التخزين المؤقت للمتصفح.</li>
-                        </ul>
-                    </div>
-                `;
+                title.innerText = "Terms of Service";
+                content.innerHTML = "<p>Free tool provided as-is for the developer community.</p>";
             }
         }
 
         function closeModal() { document.getElementById('modal-overlay').classList.add('hidden'); }
 
         function loadInitialSample() {
-            editor.setValue(`<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>مرحباً بك في HTML.com.ly</title>
-  <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 90vh;
-      background: #f3f4f6;
-      margin: 0;
-    }
-    .card {
-      border: 4px solid #000;
-      box-shadow: -10px 10px 0 #0066FF;
-      padding: 40px;
-      background: #fff;
-      max-width: 500px;
-      text-align: center;
-    }
-    h1 {
-      color: #0066FF;
-      font-size: 2.5rem;
-      margin-top: 0;
-    }
-    p {
-      color: #333;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .badge {
-      display: inline-block;
-      background: #000;
-      color: #fff;
-      padding: 6px 12px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>أهلاً بك في محرّر الأكواد!</h1>
-    <p>هذه معاينة حية وتلقائية لكود HTML الخاص بك. جرب تعديل النصوص هنا وستلاحظ التحديث الفوري في لوحة المعاينة المجاورة.</p>
-    <span class="badge">جاهز للتطوير ⚡</span>
-  </div>
-  <!-- PWA Service Worker Registration (Generated by PWA Generator) -->
+            editor.setValue(`<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 90vh; background: #fdfdfd; }\n    .card { border: 4px solid #000; box-shadow: 10px 10px 0 #0066FF; padding: 40px; background: #fff; }\n    h1 { color: #0066FF; font-size: 3rem; margin: 0; }\n  </style>\n</head>\n<body>\n  <div class="card">\n    <h1>HTML.com.ly</h1>\n    <p>Professional Previewer Loaded.</p>\n  </div>\n  <!-- PWA Service Worker Registration (Generated by PWA Generator) -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -668,8 +581,7 @@
       });
     }
   </script>
-</body>
-</html>`);
+</body>\n</html>`);
         }
     </script>
 </body>
